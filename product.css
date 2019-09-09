@@ -69,6 +69,7 @@ section#content .search button{
 	
 }
 /*start product item*/
+
 .product_item{
 	display: flex;
 	justify-content: space-around;
@@ -97,13 +98,37 @@ section#content .search button{
 	font-size: 15px;
 }
 /*popular start*/
+.product_popular{
+	position: relative;
+	min-height: 500px;
+}
 .popular{
 	margin-left: 50px;
-	border:1px solid #3c3c4e;
+	
 	border-radius: 6px;
-	background: #3c3c4e;
+	/*background: #3c3c4e;*/
 	display: inline-block;
 	margin-top: 20px;
+}
+.popular ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.popular ul li{
+	display: block;
+	list-style: none;
+	font-size: 20px;
+	color: #ffffff;
+	padding: 5px;
+	margin: 0 3px;
+	background: #dddee0;
+	border-radius: 4px;
+	border:1px solid #3c3c4e;
+}
+.popular ul li.show,.popular ul li:hover{
+	background: #3c3c4e;
+	color: #fff;
 }
 .popular p{
 	font-size: 20px;
@@ -116,16 +141,23 @@ section#content .search button{
 	justify-content:space-between;	
 	flex-wrap: wrap;
 	padding-bottom: 20px;
-	
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
 
 }
-
+.showDetail{
+	opacity: 1;
+	visibility: visible;
+}
 .box_item_list{
 	box-sizing: border-box;	
 	width: 33%;
 	display: flex;
 	justify-content: center;
 	margin: 30px 0;
+	
+
 }
 .box_item_list .infor{
 	margin-left: 8px;

@@ -139,3 +139,46 @@ section#content .search button{
 .menu_blog ul li a img{
 	margin-right: 4px;
 }
+ /*pagination*/
+.wrap_pagination ul{
+	position: relative;
+	background: #fff;
+	display: flex;
+	padding: 10px 20px;
+	border-radius: 50px;
+	box-shadow: 0 5px 15px rgba(0,0,0,.2)
+}
+.wrap_pagination ul li{
+	list-style: none;
+	margin: 0 5px;
+	line-height: 50px;
+}
+.wrap_pagination ul li.pageNumber{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.wrap_pagination ul li a{
+	display: block;
+	color:#777;
+	text-decoration: none;
+	font-weight: 600;
+	border-radius: 50%;
+}
+.wrap_pagination ul li.pageNumber:hover a,
+.wrap_pagination ul li.pageNumber.active a
+{
+	background: #333;
+	color: #fff;
+}
+.wrap_pagination ul li:first-child{
+	margin-right: 30px;
+	font-weight: 700;
+	font-size: 20px;
+}
+.wrap_pagination ul li:last-child{
+	margin-right: 30px;
+	font-weight: 700;
+	font-size: 20px;
+}
